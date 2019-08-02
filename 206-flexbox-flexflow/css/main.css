@@ -98,7 +98,7 @@ textarea {
 
 html {
   background-color: #fff;
-  height: 100%;
+  height: auto;
 }
 
 body {
@@ -106,8 +106,31 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
-  background-color: #200909;
+  background-color: #352e2e;
 
+}
+
+header,
+main,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2em;
+}
+
+h1, h3 {
+    color: #fff;
+}
+
+main {
+    border-bottom: 4px solid slategray;
 }
 
 .wrapper {
@@ -132,7 +155,23 @@ body {
     border-left: 1px solid slategray;
 }
 
+footer {
+    border-top: 4px solid slategray;
+}
 
+footer ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+footer ul li a {
+    display: flex;
+    text-decoration: none;
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 25px 15px;
+}
 
 
 /* ==========================================================================
