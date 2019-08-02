@@ -1,0 +1,324 @@
+html {
+	font-size: 16px;
+}
+
+@font-face{
+	font-family: 'Wisdom Script';
+	src: url('../fonts/wisdom-script.otf') format('opentype');
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.container {
+	width: 350px;
+	margin: 0 auto;
+}
+
+/*MOBILE MODULES*/
+/*HEADER BASE*/
+header {
+	font-size: .875em;
+	width: 100%;
+}
+
+header h1 {
+	font-size: 2.143em;
+	padding: 1.267em 0;
+	width: 100%;
+	text-align: center;
+}
+
+header nav ul li {
+	font-size: 1em;
+	padding: 1em .625em;
+}
+
+/*TOP SECTION BASE*/
+.top-section {
+	font-size: 1em;
+	width: 100%;
+}
+
+.top-section .main-title h3 {
+	font-size: 1.125em;
+	padding: .313em 0em;
+	color: #77a466;
+}
+
+.top-section .main-title p {
+	font-size: 1em;
+	padding: 0em;
+	line-height: 1.563em;
+}
+
+/*BOTTOM SECTION BASE*/
+.bottom-section {
+	font-size: 1em;
+	width: 100%;
+}
+
+.bottom-section .section-one h4 {
+	font-size: .75em;
+	padding: .625em 0em;
+}
+
+.bottom-section .section-one .menu li {
+	padding: .625em 0em;
+	color: #77a466;
+}
+
+.bottom-section .section-two h4 {
+	font-size: .75em;
+	padding: .625em 0em;
+}
+
+.bottom-section .section-two p {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.313em;
+}
+
+.bottom-section .section-three h4 {
+	font-size: .75em;
+	padding: .625em 0em;
+}
+
+.bottom-section .section-three p {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*FOOTER BASE*/
+footer {
+	font-size: 1em;
+	width: 100%;
+}
+
+footer h4 {
+	font-size: 0.75em;
+}
+
+header {
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
+}
+
+header h1 {
+	float: left;
+	margin: 0;
+	padding: 38px 0;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	float: right;
+	width: 100%;
+	text-align: center;
+	padding: 1.25em 0;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	display: block;
+	align-content: center;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section,
+.bottom-section {
+	margin: 0 auto;
+	clear: both;
+}
+
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	border-top: .0625em solid #eee;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+
+footer {
+	height: 3.125em;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.875em;
+}
+
+/*TABLET*/
+@media (min-width: 768px) {
+	.container {
+		width: 750px;
+		margin: 0 auto;
+	}
+
+	header h1 {
+		font-size: 3.5em;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+		float: left;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.bottom-section .section-two p {
+		font-size: .875em;
+	}
+
+	.section-two p, .section-three p {
+		padding-left: 1em;
+	}
+
+	.bottom-section .section-two h4 {
+		padding-left: 16px;
+	}
+
+	.bottom-section .section-three h4 {
+		padding-left: 16px;
+	}
+}
+
+@media (min-width: 1200px){
+	.container{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	header {
+		width: 100%;
+	}
+
+	.top-section {
+		width: 100%;
+	}
+
+	.bottom-section {
+		width: 100%;
+	}
+
+	footer {
+		width: 100%;
+	}
+
+	header h1 {
+		font-size: 2.5em;
+		float: left;
+		width: 46%;
+		text-align: left;
+	}
+
+	header nav {
+		float: right;
+		padding: 46px 0;
+		width: 50%;
+		text-align: right;
+	}
+
+	header nav ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	header nav ul li {
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.15em;
+		padding: 0 10px;
+		display: inline;
+		justify-content: center;
+	}
+
+	.top-section .main-title h3 {
+		font-size: 1.5em;
+	}
+
+	.top-section .main-title p {
+		font-size: 1.25em;
+	}
+
+	.bottom-section .section-one h4 {
+		font-size: 1em;
+	}
+
+	.bottom-section .section-two h4 {
+		font-size: 1em;
+	}
+
+	.bottom-section .section-three h4 {
+		font-size: 1em;
+	}
+
+	.bottom-section .section-two p {
+		font-size: 1.2em;
+	}
+
+	.bottom-section .section-three p {
+		font-size: 1.2em;
+	}
+
+	.bottom-section .section-one .menu li {
+		font-size: 1.2em;
+	}
+
+	footer h4 {
+		font-size: 1.3em;
+	}
+}
