@@ -480,11 +480,63 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* --- Desktop Styles --- */
+    .content-wrapper {
+      max-width: 960px;
+    }
+
+/* HERO */
+    .hero-area h1 {
+      width: 60%;
+    }
+
+
+/* ASIDE */
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+
+    aside .content-wrapper .form-description,
+    aside .content-wrapper .form {
+      width: 30%;
+    }
+
+
+/* FEATURES */
+    .features h2 {
+      width: 70%;
+    }
+
+    .features article {
+      flex-basis: 33%;
+    }
+
+/* REVIEWS */
+    .reviews article div {
+      width: 42%;
+    }
+
+
+/* ----- ABOUT PAGE -----*/
+    .mission h2,
+    .contact-section .content-wrapper h2 {
+      width: 100%;
+    }
+
+    .contact-section .content-wrapper h2 {
+      margin-bottom: 40px;
+    }
+
+
+/* ----- FAQ PAGE ----- */
+    .faq h2 {
+      width: 100%;
+    }
+
+    .faq-content {
+      flex-basis: 35%;
+    }
 
 }
-
-
-
 
 
 
