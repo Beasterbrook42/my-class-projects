@@ -771,6 +771,11 @@ input[type=button] {
       width: 42%;
     }
 
+    .reviews h3 {
+      width: 100%;
+      margin: 0px;
+    }
+
     .reviews h1 {
       padding-bottom: 60px;
     }
