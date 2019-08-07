@@ -203,6 +203,7 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding-left: 0px;
 }
 
 header nav ul li {
@@ -270,13 +271,21 @@ footer .copyright {
 .hero-area {
   background: url('../img/hero-img.jpg') center no-repeat #333;
   background-size: cover;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
-hero-area h1 {
+.hero-area h1 {
   font-size: 2.25em;
 }
 
 /* ASIDE */
+aside .content-wrapper {
+  margin: 30px 0px 50px 0px;
+}
+
 aside {
   display: flex;
   justify-content: center;
@@ -290,6 +299,7 @@ aside .form {
 
 input[type=text] {
   box-sizing: border-box;
+  height: 50px;
   width: 100%;
   color: #2a423a;
   font-style: italic;
@@ -538,8 +548,8 @@ input[type=button] {
       width: 30%;
     }
 
-    header.content-wrapper {
-      width: 100%;
+    header .content-wrapper {
+      width: 83%;
       justify-content: space-between;
     }
 
@@ -555,10 +565,24 @@ input[type=button] {
       display: none;
     }
 
+    .hero-area h1 {
+      font-size: 3em;
+      line-height: 1;
+      margin: 0;
+    }
+
+    aside h3 {
+      font-size: 1.5em;
+    }
+
+    aside p {
+      font-size: 1em;
+    }
+
     aside .content-wrapper {
       margin: 50px 0px;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       flex-flow: row wrap;
     }
 
@@ -570,6 +594,7 @@ input[type=button] {
 
     .features h2 {
       margin: 0 20px 20px 0;
+      font-size: 2.25em;
     }
 
     .features article {
@@ -587,6 +612,11 @@ input[type=button] {
     .reviews article {
       display: flex;
       justify-content: space-between;
+    }
+
+    .reviews h1 {
+      font-size: 2.25em;
+      width: 75%;
     }
 
     .reviews h2 {
@@ -617,6 +647,16 @@ input[type=button] {
     footer h4 {
       font-size: 1.5em;
       margin-bottom: 40px;
+    }
+
+    footer p {
+      line-height: 1.285;
+      font-size: 1em;
+    }
+
+    footer .social-icons {
+      width: 12.5em;
+      justify-content: space-between;
     }
 
     footer .copyright {
@@ -670,13 +710,35 @@ input[type=button] {
       max-width: 960px;
     }
 
+    h2 {
+      font-size: 2.25em;
+    }
+
+    h3, h4 {
+      font-size: 1.875em;
+    }
+
+    p {
+      font-size: 1.125em;
+      line-height: 1.333em;
+    }
+
+    header .content-wrapper {
+      width: 80%;
+    }
+
     header figure {
       width: 24%;
     }
 
 /* HERO */
     .hero-area h1 {
-      width: 60%;
+      width: 70%;
+      font-size: 3.75em;
+    }
+
+    .hero-area .content-wrapper {
+      margin: 25px 0;
     }
 
 
@@ -690,10 +752,14 @@ input[type=button] {
       width: 30%;
     }
 
+    .form-description p {
+      font-size: 1.125em;
+    }
+
 
 /* FEATURES */
     .features h2 {
-      width: 70%;
+      width: 90%;
     }
 
     .features article {
@@ -703,6 +769,10 @@ input[type=button] {
 /* REVIEWS */
     .reviews article div {
       width: 42%;
+    }
+
+    .reviews h1 {
+      padding-bottom: 60px;
     }
 
 
